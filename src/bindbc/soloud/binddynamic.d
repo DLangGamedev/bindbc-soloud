@@ -1005,8 +1005,8 @@ SLSupport loadSoloud()
     {
         const(char)[][2] libNames =
         [
-            "libsoloud.so.1",
-            "libsoloud.so"
+            "libsoloud.so",
+            "libsoloud.so.1"
         ];
     }
     else static assert(0, "bindbc-soloud is not yet supported on this platform.");
@@ -1020,7 +1020,6 @@ SLSupport loadSoloud()
     }
     return ret;
 }
-
 
 SLSupport loadSoloud(const(char)* libName)
 {
